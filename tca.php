@@ -42,6 +42,15 @@ $TCA['tx_tmcars_vehicle'] = array (
 				'size' => '30',
 			)
 		),
+                'price' => array (		
+			'exclude' => 0,		
+			'label' => 'LLL:EXT:tm_cars/locallang_db.xml:tx_tmcars_vehicle.price',		
+			'config' => array (
+				'type' => 'input',	
+				'size' => '30',
+                                'eval' => 'required'
+			)
+		),
 		'fuel_con' => array (		
 			'exclude' => 0,		
 			'label' => 'LLL:EXT:tm_cars/locallang_db.xml:tx_tmcars_vehicle.fuel_con',		
@@ -143,7 +152,7 @@ $TCA['tx_tmcars_vehicle'] = array (
 		),
 	),
 	'types' => array (
-		'0' => array('showitem' => 'hidden;;1;;1-1-1, title;;;;2-2-2, comment;;;;3-3-3, price_info, fuel_con, fuel_in, fuel_out, co2, daten, equipment, description;;;richtext[]:rte_transform[mode=ts], number, images, used')
+		'0' => array('showitem' => 'hidden;;1;;1-1-1, title;;;;2-2-2, comment;;;;3-3-3, price_info, price, fuel_con, fuel_in, fuel_out, co2, daten, equipment, description;;;richtext[]:rte_transform[mode=ts], number, images, used')
 	),
 	'palettes' => array (
 		'1' => array('showitem' => '')
