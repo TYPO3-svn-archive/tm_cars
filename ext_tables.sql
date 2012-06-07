@@ -12,6 +12,7 @@ CREATE TABLE tx_tmcars_vehicle (
 	title tinytext,
 	comment tinytext,
 	price_info tinytext,
+        price double(11,2) DEFAULT '0.00' NOT NULL,
 	fuel_con tinytext,
 	fuel_in tinytext,
 	fuel_out tinytext,
