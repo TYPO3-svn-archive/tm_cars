@@ -10,6 +10,7 @@
 			<label index="tx_tmcars_vehicle.title">Title</label>
 			<label index="tx_tmcars_vehicle.comment">Comment</label>
 			<label index="tx_tmcars_vehicle.price_info">Price info</label>
+                        <label index="tx_tmcars_vehicle.price">Price</label>
 			<label index="tx_tmcars_vehicle.fuel_con">Fuel consumption</label>
 			<label index="tx_tmcars_vehicle.fuel_in">Fuel consumption urban</label>
 			<label index="tx_tmcars_vehicle.fuel_out">Fuel cosumption out of town</label>
@@ -27,6 +28,7 @@
 			<label index="tx_tmcars_vehicle.title">Titel</label>
 			<label index="tx_tmcars_vehicle.comment">Kommentar</label>
 			<label index="tx_tmcars_vehicle.price_info">Preis info</label>
+                        <label index="tx_tmcars_vehicle.price">Preis</label>
 			<label index="tx_tmcars_vehicle.fuel_con">Kraftstoffverbr. komb.</label>
 			<label index="tx_tmcars_vehicle.fuel_in">Kraftstoffverbr. innerorts</label>
 			<label index="tx_tmcars_vehicle.fuel_out">Kraftstoffverbr. außerorts:</label>
