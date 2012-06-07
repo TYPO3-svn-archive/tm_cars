@@ -8,7 +8,7 @@ t3lib_extMgm::allowTableOnStandardPages('tx_tmcars_vehicle');
 $TCA['tx_tmcars_vehicle'] = array (
 	'ctrl' => array (
 		'title'     => 'LLL:EXT:tm_cars/locallang_db.xml:tx_tmcars_vehicle',		
-		'label'     => 'uid',	
+		'label'     => 'title',	
 		'tstamp'    => 'tstamp',
 		'crdate'    => 'crdate',
 		'cruser_id' => 'cruser_id',
