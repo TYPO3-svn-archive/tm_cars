@@ -1,3 +1,4 @@
+<!-- ###TEMPLATE_LIST### -->
 <body class=" chr chr19 chr19-0 mac" id="groupForm"><div id="theToolTip"><div id="answer"><div id="answerBox"></div></div></div><img id="ToolTipPointer" src="/static/dealer-homepage/graphics/tooltiparrow.gif">
 
     <script type="text/javascript" src="http://static.classistatic.de/git.b31597.master.6e9fd54/resources/js/common/natural_search_track.js"></script>
@@ -26,15 +27,12 @@
         <div id="contentBox" class="ses">
 
 
-            <h3>Fahrzeuge im Angebot</h3>
+            <h3>###HEADER###</h3>
             <span class="totalResults">1 bis 20 von 68 gefundenen Fahrzeugen</span>
 
-            <div class="sorting clearfix">
-
-                <!-- #####################	Paging & Sorting  ########################## -->				
-
+            <div class="sorting clearfix">				
                 <ul class="paging clearfix">
-                    <li>Seite</li>
+                    <li>###PAGE###</li>
 
                     <li class="active">1</li>
                     <li><span class="vModLinkUrl" onclick="location.href='searchresults.html?pageNumber=2&amp;__lp=4&amp;scopeId=AV&amp;sortOption.sortBy=makeModelDescriptionSortField&amp;makeModelVariant1.searchInFreetext=false&amp;makeModelVariant2.searchInFreetext=false&amp;makeModelVariant3.searchInFreetext=false&amp;damageUnrepaired=ALSO_DAMAGE_UNREPAIRED&amp;export=ALSO_EXPORT&amp;grossPrice=true&amp;customerIdsAsString=465355&amp;lang=de&amp;partnerHead=false&amp;showZip=false&amp;showModels=false&amp;hideVehicleType=false';">2</span></li>
@@ -46,87 +44,68 @@
                     </li>
 
                     <li><span class="vModLinkUrl next" onclick="location.href='searchresults.html?pageNumber=2&amp;__lp=4&amp;scopeId=AV&amp;sortOption.sortBy=makeModelDescriptionSortField&amp;makeModelVariant1.searchInFreetext=false&amp;makeModelVariant2.searchInFreetext=false&amp;makeModelVariant3.searchInFreetext=false&amp;damageUnrepaired=ALSO_DAMAGE_UNREPAIRED&amp;export=ALSO_EXPORT&amp;grossPrice=true&amp;customerIdsAsString=465355&amp;lang=de&amp;partnerHead=false&amp;showZip=false&amp;showModels=false&amp;hideVehicleType=false';">Nächste</span></li>
-                </ul><!-- /pagination-->
-
-
+                </ul>
                 <form action="#" method="post">
                     <fieldset>
-                        <legend>Liste sortieren</legend>
-                        <label for="sortForm">Liste sortieren</label>
+                        <legend>###SORT_LIST###</legend>
+                        <label for="sortForm">###SORT_LIST###</label>
                         <select id="sortForm" onchange="javascript:changeSortOrder(this);">
-                            <option class="sortList ASC" value="makeModelDescriptionSortField" selected="">Marke</option>
-                            <option class="sortList " value="price.consumerGrossEuro">Preis</option>
+                            <option class="sortList ASC" value="makeModelDescriptionSortField" selected="">###BRAND###</option>
+                            <option class="sortList " value="price.consumerGrossEuro">###PRICE###</option>
                         </select>
                     </fieldset>
                 </form>
 
-                <!-- #####################	/Paging & Sorting  ########################## -->					
-
-
             </div>
 
-            <!-- #####################	Search Results ########################## -->
             <ul id="searchResults">
-                <!-- * include = hitListEntry.ftl -->
+                <!-- ###CARS### -->
                 <li class="clearfix">
-                    <!-- ##########################	Preview Image and Detail Link ####################	-->
                     <div class="preview">
                         <span class="vModLinkImg" onclick="location.href='showDetails.html?id=161825182&amp;customerIdsAsString=465355&amp;__lp=4&amp;scopeId=AV&amp;sortOption.sortBy=makeModelDescriptionSortField&amp;makeModelVariant1.searchInFreetext=false&amp;makeModelVariant2.searchInFreetext=false&amp;makeModelVariant3.searchInFreetext=false&amp;damageUnrepaired=ALSO_DAMAGE_UNREPAIRED&amp;export=ALSO_EXPORT&amp;grossPrice=true&amp;customerIdsAsString=465355&amp;lang=de&amp;pageNumber=1&amp;partnerHead=false&amp;showZip=false&amp;showModels=false&amp;hideVehicleType=false';">
-                            <img alt="Fahrzeugbild" src="http://i.ebayimg.com/00/$(KGrHqZHJBIE-eW3+,ZCBPquWOKhh!~~_14.JPG">
+                            <img alt="Fahrzeugbild" src="###CAR_IMG###" width="64" height="47" />
                         </span>
-                        <span class="vModLinkUrl" onclick="location.href='showDetails.html?id=161825182&amp;customerIdsAsString=465355&amp;__lp=4&amp;scopeId=AV&amp;sortOption.sortBy=makeModelDescriptionSortField&amp;makeModelVariant1.searchInFreetext=false&amp;makeModelVariant2.searchInFreetext=false&amp;makeModelVariant3.searchInFreetext=false&amp;damageUnrepaired=ALSO_DAMAGE_UNREPAIRED&amp;export=ALSO_EXPORT&amp;grossPrice=true&amp;customerIdsAsString=465355&amp;lang=de&amp;pageNumber=1&amp;partnerHead=false&amp;showZip=false&amp;showModels=false&amp;hideVehicleType=false';">Details</span><br>								
+                        <span class="vModLinkUrl" onclick="location.href='showDetails.html?id=161825182&amp;customerIdsAsString=465355&amp;__lp=4&amp;scopeId=AV&amp;sortOption.sortBy=makeModelDescriptionSortField&amp;makeModelVariant1.searchInFreetext=false&amp;makeModelVariant2.searchInFreetext=false&amp;makeModelVariant3.searchInFreetext=false&amp;damageUnrepaired=ALSO_DAMAGE_UNREPAIRED&amp;export=ALSO_EXPORT&amp;grossPrice=true&amp;customerIdsAsString=465355&amp;lang=de&amp;pageNumber=1&amp;partnerHead=false&amp;showZip=false&amp;showModels=false&amp;hideVehicleType=false';">###CAR_DETAILS###</span><br>								
 
                     </div>
-
-                    <!-- ##########################	/Preview Image and Detail Link ####################	-->
-
-                    <!-- ##########################	Details Link ####################	-->
-
                     <div class="facts">
 
                         <h4>
                             <span class="vModLinkUrl" onclick="location.href='showDetails.html?id=161825182&amp;customerIdsAsString=465355&amp;__lp=4&amp;scopeId=AV&amp;sortOption.sortBy=makeModelDescriptionSortField&amp;makeModelVariant1.searchInFreetext=false&amp;makeModelVariant2.searchInFreetext=false&amp;makeModelVariant3.searchInFreetext=false&amp;damageUnrepaired=ALSO_DAMAGE_UNREPAIRED&amp;export=ALSO_EXPORT&amp;grossPrice=true&amp;customerIdsAsString=465355&amp;lang=de&amp;pageNumber=1&amp;partnerHead=false&amp;showZip=false&amp;showModels=false&amp;hideVehicleType=false';">
-                                Audi&nbsp;A5 3.0 TDI DPF quattro 							</span>
+                                ###CAR_TITLE###							</span>
                         </h4>
 
                         <h5 class="isItNew">
-                            Gebrauchtfahrzeug						</h5>		
+                            ###CAR_USED###						</h5>		
                         <div>
 
                             <a title="'Pkw'" class="noicon keyword" href="http://suchen.mobile.de/fahrzeuge/auto/">Pkw</a>
-                            , Sportwagen/Coupé							<br>
+                            , ###CAR_TYPE###							<br>
 
 
-                            176 kW (239 PS), Schwarz,&nbsp;Diesel,&nbsp;Schaltgetriebe, Umweltplakette 4 (Grün)							<br>
+                            ###CAR_SUMMARY_FIRST###							<br>
 
 
-                            Klimaautomatik, EZ: 8/2007, 82.000&nbsp;km								<!-- NEW Vehicles -->					
+                            ###CAR_SUMMARY_SECOND###							<!-- NEW Vehicles -->					
 
 
 
                         </div>
 
-                        <!-- /##########################	Details Link ####################	-->
-
-
-                        <!-- /##########################	Price 	 ####################	-->
                         <div class="price">
 
                             <span class="vModLinkUrl" onclick="location.href='showDetails.html?id=161825182&amp;customerIdsAsString=465355&amp;__lp=4&amp;scopeId=AV&amp;sortOption.sortBy=makeModelDescriptionSortField&amp;makeModelVariant1.searchInFreetext=false&amp;makeModelVariant2.searchInFreetext=false&amp;makeModelVariant3.searchInFreetext=false&amp;damageUnrepaired=ALSO_DAMAGE_UNREPAIRED&amp;export=ALSO_EXPORT&amp;grossPrice=true&amp;customerIdsAsString=465355&amp;lang=de&amp;pageNumber=1&amp;partnerHead=false&amp;showZip=false&amp;showModels=false&amp;hideVehicleType=false';">
-                                26.775 EUR							</span>
+                                ###CAR_PRICE### EUR							</span>
                         </div>
-                        <!-- /##########################	Price 	 ####################	-->
 
                     </div>
                 </li>
 
-                <!-- * include = hitListEntry.ftl -->
+                <!-- ###CARS### -->
             </ul>
-            <!-- #####################	/Search Results ########################## -->
-
 
             <ul class="paging clearfix">
-                <li>Seite</li>
+                <li>###PAGE###</li>
                 <li class="active">1</li>
                 <li><span class="vModLinkUrl" onclick="location.href='searchresults.html?pageNumber=2&amp;__lp=4&amp;scopeId=AV&amp;sortOption.sortBy=makeModelDescriptionSortField&amp;makeModelVariant1.searchInFreetext=false&amp;makeModelVariant2.searchInFreetext=false&amp;makeModelVariant3.searchInFreetext=false&amp;damageUnrepaired=ALSO_DAMAGE_UNREPAIRED&amp;export=ALSO_EXPORT&amp;grossPrice=true&amp;customerIdsAsString=465355&amp;lang=de&amp;partnerHead=false&amp;showZip=false&amp;showModels=false&amp;hideVehicleType=false';">2</span></li>
                 <li><span class="vModLinkUrl" onclick="location.href='searchresults.html?pageNumber=3&amp;__lp=4&amp;scopeId=AV&amp;sortOption.sortBy=makeModelDescriptionSortField&amp;makeModelVariant1.searchInFreetext=false&amp;makeModelVariant2.searchInFreetext=false&amp;makeModelVariant3.searchInFreetext=false&amp;damageUnrepaired=ALSO_DAMAGE_UNREPAIRED&amp;export=ALSO_EXPORT&amp;grossPrice=true&amp;customerIdsAsString=465355&amp;lang=de&amp;partnerHead=false&amp;showZip=false&amp;showModels=false&amp;hideVehicleType=false';">3</span></li>
@@ -138,10 +117,467 @@
 
                 <li><span class="vModLinkUrl next" onclick="location.href='searchresults.html?pageNumber=2&amp;__lp=4&amp;scopeId=AV&amp;sortOption.sortBy=makeModelDescriptionSortField&amp;makeModelVariant1.searchInFreetext=false&amp;makeModelVariant2.searchInFreetext=false&amp;makeModelVariant3.searchInFreetext=false&amp;damageUnrepaired=ALSO_DAMAGE_UNREPAIRED&amp;export=ALSO_EXPORT&amp;grossPrice=true&amp;customerIdsAsString=465355&amp;lang=de&amp;partnerHead=false&amp;showZip=false&amp;showModels=false&amp;hideVehicleType=false';">Nächste</span></li>	
 
-            </ul><!-- /pagination-->
-
-
-
+            </ul>
         </div>
     </div>
 </body>
+<!-- ###TEMPLATE_LIST### -->
+
+<!-- ###TEMPLATE_SINGLE### -->
+
+<body class="detailsView chr chr19 chr19-0 mac" id="groupForm"><div id="theToolTip"><div id="answer"><div id="answerBox"></div></div></div><img id="ToolTipPointer" src="/static/dealer-homepage/graphics/tooltiparrow.gif">
+
+    <script type="text/javascript" src="http://static.classistatic.de/git.b32542.master.2e6017e/resources/js/common/natural_search_track.js"></script>
+
+    <script src="http://static.classistatic.de/git.b32542.master.2e6017e/js/prototype.js" type="text/javascript"></script>
+    <script src="http://static.classistatic.de/git.b32542.master.2e6017e/js/mobileSearch.js" type="text/javascript"></script>
+    <script src="http://static.classistatic.de/git.b32542.master.2e6017e/js/state.js" type="text/javascript"></script>
+    <script src="http://static.classistatic.de/git.b32542.master.2e6017e/resources/js/lib/scriptaculous/1.8.1/effects.js" type="text/javascript"></script>
+    <script src="http://static.classistatic.de/git.b32542.master.2e6017e/resources/js/common/_mobile.js" type="text/javascript"></script>
+    <script src="/static/dealer-homepage/js/park.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        var language="de";
+    </script>
+
+
+
+    <script type="text/javascript" src="http://static.classistatic.de/git.b32542.master.2e6017e/resources/js/criteoHelper.js"></script>
+      
+    <div id="wrapper">
+
+
+        <script src="/static/js/mobile.js" type="text/javascript"></script>
+        <script src="http://static.classistatic.de/git.b32542.master.2e6017e/resources/js/common/FormHelper.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            document.observe("dom:loaded", function(){
+                // turn off local phone prefix input for france
+                var intlPhonePrefix = $('internationalPrefix');
+                var localPhonePrefix = $('prefix');
+                if (intlPhonePrefix && localPhonePrefix) {
+                    intlPhonePrefix.observe("change", function(event) {
+                        if ($F(intlPhonePrefix) == 33) { // France
+                            mobile.FormHelper.disableFieldAndLabel(localPhonePrefix);
+                            localPhonePrefix.setValue("");
+                        } else {
+                            mobile.FormHelper.enableFieldAndLabel(localPhonePrefix);
+                        }
+                    });
+                }
+		
+                function trackTabs(tabName){ _gaq.push(['_trackPageview', '/de/public/dealerhp/des/'+tabName]); }
+                $("offerPicturesLink").observe("click", trackTabs.curry("pictures"));
+                $("offerFormLink").observe("click", trackTabs.curry("contactform"));
+                $("offerDetailLink").observe("click", trackTabs.curry("overview"));
+            });
+	
+            mobile.PageParams = {};
+            mobile.PageParams.AdId = '161825182';
+            mobile.PageParams.MessageResources = {
+                SENDING			: 'Parke Fahrzeug ..',
+                SUCCESSFULL		: 'Fahrzeug erfolgreich geparkt.',
+                PARK_FULL		: 'Ihr Parkplatz ist voll.',
+                AD_NOT_EXISTENT	: 'Das Fahrzeug wurde in der Zwischenzeit entfernt.',
+                AD_NOT_VISIBLE	: 'Das Fahrzeug wurde in der Zwischenzeit entfernt!',
+                PARKING_EXISTS	: 'Das Fahrzeug wurde bereits geparkt.',
+                ERROR           : 'Es ist ein Fehler aufgetreten.'
+            }
+            mobile.trackParking = function(){_gaq.push(['_trackPageview', '/de/public/dealerhp/car/parkvehicle'], ['_trackEvent', 'car', '/de/public/dealerhp/car/parkvehicle', 'dealerhp'])};
+        </script>
+
+
+
+
+
+
+
+
+        <div id="contentBox" class="des">
+
+            <!-- ################### Sub Navigation #################### -->			
+            <ul id="subNav" class="clearfix">
+                <li class="active"><a href="#offerDetail" id="offerDetailLink">Details</a></li>
+                <li><a href="#offerPictures" id="offerPicturesLink">Bilder</a></li>
+                <li><a href="#offerForm" id="offerFormLink">Anfrage</a></li>
+            </ul>
+            <!-- ################### /Sub Navigation #################### -->						
+
+
+            <a rel="nofollow" class="backLink" href="/home/homepageAllVehiclesSearch.html?scopeId=AV&amp;sortOption.sortBy=makeModelDescriptionSortField&amp;makeModelVariant1.searchInFreetext=false&amp;makeModelVariant2.searchInFreetext=false&amp;makeModelVariant3.searchInFreetext=false&amp;damageUnrepaired=ALSO_DAMAGE_UNREPAIRED&amp;export=ALSO_EXPORT&amp;grossPrice=true&amp;customerIdsAsString=465355&amp;lang=de&amp;partnerHead=false&amp;showZip=false&amp;showModels=false&amp;hideVehicleType=false&amp;pageNumber=1">Zurück zur Fahrzeugliste</a>
+
+
+            <!-- ################### Offer Details #################### -->
+
+            <div id="offerDetail" class="clearfix">
+                <div class="offerDetails clearfix">
+
+                    <!-- ################### Preview Image and Links #################### -->
+                    <div id="offerPreview" class="offerPreview">
+                        <div>
+
+
+                            <div>
+                                <a href="#" id="offerPicturesLink3" title="Bilder ansehen">
+                                    <img name="pic_01" src="http://i.ebayimg.com/00/$(KGrHqZHJBIE-eW3+,ZCBPquWOKhh!~~_24.JPG" alt="Audi A5 3.0 TDI DPF quattro ">
+                                </a>						
+                            </div>
+
+                            <!-- Use UTF-8 charset for URL escaping from now: -->
+
+
+                            <div id="messagePane" class="messagePane"></div>
+
+                            <ul id="buttonPane">
+                                <li id="gotoParking" class="gotoParking hidden"><a class="gotoParkingLink" id="gotoParkingLink" href="http://www.mobile.de/home/parking/list.html">Zum Parkplatz</a></li>
+                                <li id="parkVehicle" class="parkVehicle "><a class="parkVehicleLink" id="parkVehicleLink" href="#">Fahrzeug parken</a></li>
+
+                                <!-- ################## more Pictures Link ######################## -->	
+                                <li class="moreImages"><a class="morePicturesLink" id="offerPicturesLink2" href="#">Bilder ansehen</a></li>
+                                <!-- ################## /more Pictures Link ######################## -->											
+
+                                <!-- recommendation -->
+                                <!--bitte drin lassen, damit die tags vom übersetzungsscript als 'existierend' erkannt werden
+Interessantes Fahrzeug bei mobile.deHallo, ich habe ein interessantes Fahrzeug bei mobile.de gefunden: 								 -->
+                                <!-- ################## recommend and Print Link ######################## -->
+                                <li class="recommend"><a class="tellaFriendLink" href="mailto:?subject=Interessantes%20Fahrzeug%20bei%20mobile.de&amp;body=Hallo%2C%20%0D%0Aich%20habe%20ein%20interessantes%20Fahrzeug%20bei%20mobile.de%20gefunden%3A%20%0D%0A%0D%0AAudi%20A5%203.0%20TDI%20DPF%20quattro%20%0D%0A%0D%0Ahttp://suchen.mobile.de/fahrzeuge/details.html?id=161825182">Fahrzeug weiterempfehlen</a></li>
+                                <!-- /recommendation -->
+                                <li><a class="printLink" href="#" onclick="openPopUp('/home/printView.html?id=161825182&amp;customerIdsAsString=465355', 750, 570, 100, 100, 'yes', 'yes', 'yes', 'yes', 'yes', 'yes');">Druckansicht</a></li>
+                                <!-- ################## /recommend and Print Link ######################## -->					
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- ################### /Preview Image and Links #################### -->					
+
+                    <h3>
+                        Audi&nbsp;A5 3.0 TDI DPF quattro 					</h3>
+                    <span class="isItNew">(Pkw, Sportwagen/Coupé, Gebrauchtfahrzeug
+
+
+
+
+
+                        <h4>Preis:</h4>
+                        <p class="price"><span>26.775 EUR</span> MwSt. ausweisbar
+                        </p>
+
+
+                        <h4>Kraftstoffverbr.</h4>
+                        <!-- adSpecificsEnvkv.ftl -->
+
+
+                        <!--Durchschnittsverbrauch-->
+
+                        <span>Kraftstoffverbr. komb.:&nbsp;<a href="#" class="addToolTip" tooltiptext="Die angegebenen Werte wurden nach dem vorgeschriebenen Messverfahren (§ 2 Nrn. 5, 6, 6a Pkw-EnVKV in der jeweils geltenden Fassung) ermittelt. Die Angaben beziehen sich nicht auf ein einzelnes Fahrzeug und sind nicht Bestandteil des Angebots, sondern dienen allein Vergleichszwecken zwischen den verschiedenen Fahrzeugtypen."><img src="/static/dealer-homepage/graphics/info.gif" alt="Info"></a></span>
+                        <strong>ca. 6,6 l/100 km</strong><br class="clear">
+                        <!--Verbrauch innerorts-->
+                        <span>Kraftstoffverbr. innerorts: </span>
+                        <strong>ca. 8,8 l/100 km</strong><br class="clear">
+                        <!--Verbrauch außerorts-->
+                        <span>Kraftstoffverbr. außerorts: </span>
+                        <strong>ca. 5,3 l/100 km</strong><br class="clear">
+                        <!--CO2 Emission-->
+                        <span>CO<sub>2</sub>-Emissionen komb.: </span>
+                        <strong>ca. 173 g/km</strong><br class="clear">
+
+
+                        <script language="JavaScript" type="text/JavaScript">
+                            document.onmousemove=positiontip;
+                            addwarning();
+                        </script>
+
+
+                        <h4 class="clearLeft">Daten</h4>
+
+                        82.000&nbsp;km, <span>Hubraum:</span>&nbsp;2967, 176 kW (239 PS)
+                        , <span>Anzahl der Fahrzeughalter:</span>&nbsp;1, Diesel, Getriebe: Schaltgetriebe, Front- und Seiten-Airbags, Anzahl Sitzplätze: 4, Schadstoffklasse: Euro4, Umweltplakette: 4 (Grün), <span>Erstzulassung: </span>8/2007, Klimatisierung: Klimaautomatik, Herstellerfarbbezeichnung: Brillantschwarz
+                        <!-- /vehicleFeatures -->
+
+
+                        <h4>Ausstattung</h4>
+
+                        ABS, 
+                        Allradantrieb, 
+                        Einparkhilfe, 
+                        El. Fensterheber, 
+                        El. Wegfahrsperre, 
+                        ESP, 
+                        Lederausstattung, 
+                        Leichtmetallfelgen, 
+                        Navigationssystem, 
+                        Partikelfilter, 
+                        Scheckheftgepflegt, 
+                        Servolenkung, 
+                        Sitzheizung, 
+                        Xenonscheinwerfer, 
+                        Zentralverriegelung
+
+
+                        <h4>Fahrzeugbeschreibung:</h4>
+                        •&nbsp; Brillantschwarz<br>•&nbsp; Milanoleder<br>•&nbsp; Audi Parking System APS<br>•&nbsp; Audi hold assistent<br>•&nbsp; Sportfahrwerk<br>•&nbsp; Geschwindigkeits-regelanlage<br>•&nbsp; Multifunktionssportlenkrad<br>•&nbsp; Licht - Regensensor<br>•&nbsp; Modellbezeichnung , Entfall&nbsp;<br>•&nbsp; Navigationssystem incl. MMI basic plus<br>•&nbsp; Sprachausgabe u. Piktoprogramm<br>•&nbsp; CD Wechsler<br>•&nbsp; Getränkehalter in Mittelarmlehne<br>•&nbsp; Sportsitze vorn<br>•&nbsp; Sitzheizung vorn<br>•&nbsp; Freisprecheinrichtung<br>•&nbsp; Fensterheber elektrisch<br>•&nbsp; 6 Gang Schaltgetriebe<br>•&nbsp; Grundaustattung Aussentemperaturanz.,<br>•&nbsp; Innenbel.,<br>•&nbsp; Heckscheibe beheizb.m.Zeitschaltung<br>•&nbsp; Kindersitzbef. ISOFIX<br>•&nbsp; Klimaautomatik FCKW frei<br>•&nbsp; Kopfstützen<br>•&nbsp; Lederlenkrad<br>•&nbsp; Lenksäule in Höhe u. Abst.einstellbar<br>•&nbsp; Alu.Schmiede Leichtbauräder<br>•&nbsp; Radio " Chorus" CD Laufwerk<br>•&nbsp; Servotronic<br>•&nbsp; Wegfahrsperre elektronisch<br>•&nbsp; Xenon Plus Scheinwerfer&nbsp;<br>•&nbsp; Reinigungsanl.<br>•&nbsp; Wärmeschutzverglasung<br>•&nbsp; Zentralverieglung mit Fernbedienung<br>•&nbsp; Glanz-Dachrahmen u.fensterschachtleisten in Alum.<br><br><hr>•&nbsp; UPE 54.125,00 € incl. MwSt.<br><hr>im Kundenauftrag, Irrtümer vorbehalten<br>
+                        <h4>Fahrzeugnummer&nbsp;<span>(für Kundenanfragen)</span></h4>												
+                        02491 
+
+
+
+
+
+
+
+
+
+
+
+                    </span></div>				
+
+            </div>
+            <!-- ################### /Offer Details #################### -->			
+
+
+
+
+
+            <!-- ################### Request Form #################### -->
+            <div id="offerForm" style="display: none; ">
+
+                <div id="offerFormDetail" class="clearfix">
+
+                    <!-- ################### Repeat Preview of Vehicle #################### -->				
+                    <div class="offerFormPreview">
+                        <img src="http://i.ebayimg.com/00/$(KGrHqZHJBIE-eW3+,ZCBPquWOKhh!~~_14.JPG" class="headerIcon float1" alt="Bild">
+                    </div>
+
+                    <div class="offerFormDetails">
+
+                        <h3>Audi A5 3.0 TDI DPF quattro </h3>
+
+                        <p class="isItNew">
+
+                            (
+                            Gebrauchtfahrzeug)
+
+                        </p>
+
+                        <h4><span>26.775 EUR</span>  MwSt. ausweisbar</h4>
+
+                    </div>
+
+                </div>
+                <!-- ################### /Repeat Preview of Vehicle #################### -->					
+
+
+
+
+                <div id="contactFormDiv1">
+
+
+                    <p>
+                        Wenn Sie Ihre Telefonnummer oder E-Mail-Adresse in dieses Feld eintragen, werden wir automatisch benachrichtigt und treten so schnell wie möglich mit Ihnen in Kontakt. 				</p>
+
+                    <p class="hint">
+                        Pflichtfelder sind mit einem Sternchen (*) gekennzeichnet.				</p>
+
+
+                    <!-- ########################	Errors ####################### -->
+
+                    <!-- ########################	/Errors ####################### -->
+
+
+
+                    <!-- ########################	Contact Form for Offer REquests ####################### -->
+                    <form name="contactForm1" id="contactForm1" method="POST" onsubmit="sendMail(1);return false;" action="">
+
+                        <input type="hidden" name="adId" value="161825182">
+                        <input type="hidden" name="_sendEmailCopyToPotentialBuyer">
+                        <input type="hidden" name="r" value="0,631851">
+                        <input type="hidden" name="customerId" value="465355">
+
+                        <div class="formRow clearfix">
+                            <label for="message">Ihre Nachricht: *</label>
+                            <textarea class="textarea" id="message" rows="10" cols="20" name="message"></textarea>
+                        </div>
+
+                        <div class="formRow clearfix">
+                            <label for="anrede">Anrede:</label>
+                            <select id="anrede" name="salutationType" class="title">
+                                <option value="MALE" id="MALE" selected="selected">Herr</option>
+                                <option value="FEMALE" id="FEMALE">Frau</option>
+                                <option value="COMPANY" id="COMPANY">Unternehmen</option>
+                            </select>
+                        </div>
+
+
+                        <div class="formRow clearfix">	
+                            <label for="name">Ihr Name: *</label>
+                            <input id="name" type="text" name="name" value="">
+                        </div>
+
+                        <div class="formRow clearfix">
+                            <label for="email">Ihre E-Mail-Adresse:*</label>
+                            <input id="email" type="text" name="email" value="">
+                            <div class="hint">(Falls verfügbar)</div>
+                        </div>
+
+
+                        <div class="formRow clearfix">
+                            <label for="internationalPrefix">Int. Vorwahl:</label>
+                            <select class="select" id="internationalPrefix" name="internationalPrefix">
+                                <option value="20">Ägypten (+20)</option>
+                                <option value="355">Albanien (+355)</option>
+                                <option value="376">Andorra (+376)</option>
+                                <option value="251">Äthiopien (+251)</option>
+                                <option value="32">Belgien (+32)</option>
+                                <option value="387">Bosnien und Herzogowina (+387)</option>
+                                <option value="55">Brasilien (+55)</option>
+                                <option value="359">Bulgarien (+359)</option>
+                                <option value="45">Dänemark (+45)</option>
+                                <option value="49" selected="">Deutschland (+49)</option>
+                                <option value="372">Estland (+372)</option>
+                                <option value="298">Faröer (+298)</option>
+                                <option value="358">Finnland (+358)</option>
+                                <option value="33">Frankreich (+33)</option>
+                                <option value="30">Griechenland (+30)</option>
+                                <option value="44">Großbritannien (+44)</option>
+                                <option value="353">Irland (+353)</option>
+                                <option value="354">Island (+354)</option>
+                                <option value="972">Israel (+972)</option>
+                                <option value="39">Italien (+39)</option>
+                                <option value="81">Japan (+81)</option>
+                                <option value="962">Jordanien (+962)</option>
+                                <option value="1">Kanada (+1)</option>
+                                <option value="385">Kroatien (+385)</option>
+                                <option value="965">Kuwait (+965)</option>
+                                <option value="371">Lettland (+371)</option>
+                                <option value="961">Libanon (+961)</option>
+                                <option value="423">Liechtenstein (+423)</option>
+                                <option value="370">Litauen (+370)</option>
+                                <option value="352">Luxemburg (+352)</option>
+                                <option value="356">Malta (+356)</option>
+                                <option value="212">Marokko (+212)</option>
+                                <option value="389">Mazedonien (+389)</option>
+                                <option value="52">Mexiko (+52)</option>
+                                <option value="373">Moldawien (+373)</option>
+                                <option value="377">Monaco (+377)</option>
+                                <option value="382">Montenegro (+382)</option>
+                                <option value="64">Neuseeland (+64)</option>
+                                <option value="31">Niederlande (+31)</option>
+                                <option value="234">Nigeria (+234)</option>
+                                <option value="47">Norwegen (+47)</option>
+                                <option value="968">Oman (+968)</option>
+                                <option value="43">Österreich (+43)</option>
+                                <option value="48">Polen (+48)</option>
+                                <option value="351">Portugal (+351)</option>
+                                <option value="40">Rumänien (+40)</option>
+                                <option value="7">Russland (+7)</option>
+                                <option value="378">San Marino (+378)</option>
+                                <option value="966">Saudi-Arabien (+966)</option>
+                                <option value="46">Schweden (+46)</option>
+                                <option value="41">Schweiz (+41)</option>
+                                <option value="381">Serbien (+381)</option>
+                                <option value="421">Slowakische Republik (+421)</option>
+                                <option value="386">Slowenien (+386)</option>
+                                <option value="34">Spanien (+34)</option>
+                                <option value="27">Südafrika (+27)</option>
+                                <option value="82">Südkorea (+82)</option>
+                                <option value="886">Taiwan (+886)</option>
+                                <option value="420">Tschechische Republik (+420)</option>
+                                <option value="216">Tunesien (+216)</option>
+                                <option value="90">Türkei (+90)</option>
+                                <option value="380">Ukraine (+380)</option>
+                                <option value="36">Ungarn (+36)</option>
+                                <option value="1">USA (+1)</option>
+                                <option value="971">Vereinigte Arabische Emirate (+971)</option>
+                                <option value="375">Weißrussland (+375)</option>
+                                <option value="357">Zypern (+357)</option>
+                            </select>
+                        </div>
+
+                        <div class="formRow clearfix">
+                            <label for="telephoneNumber">Ihre Telefonnummer:*</label>
+                            <input id="prefix" type="text" class="text" name="prefix" value="">
+                            <input id="telephoneNumber" type="text" name="telephoneNumber" class="" value="">
+                        </div>
+
+                        <div class="formRow2 clearfix">
+                            <input class="checkbox" id="sendEmailCopyToPotentialBuyer" type="checkbox" name="sendEmailCopyToPotentialBuyer">
+                            <label class="checkboxLabel" for="sendEmailCopyToPotentialBuyer">Bitte schicken Sie eine Kopie dieser Nachricht an meine E-Mail-Adresse!</label>
+                        </div>
+
+
+                        <div class="formRow2 clearfix">
+                            <div class="submitButtonWrapper"><input type="submit" class="submitButton" value="Abschicken" onclick="_gaq.push(['_trackEvent', 'dealerhp', '/de/public/dealerhp/contactvendor', 'contact over detailsview'])"></div>
+                        </div>
+                    </form>
+                    <!-- ########################	/Contact Form for Offer REquests ####################### -->
+
+                </div>			</div>
+
+
+            <!-- ################### /Request Form #################### -->		
+
+
+            <!-- ################### Pictures #################### -->
+
+            <div id="offerPictures" class="clearfix" style="display: none; ">
+
+                <script type="text/javascript">
+                    <!--
+                    preloadImages('http://i.ebayimg.com/00/$(KGrHqZHJBIE-eW3+,ZCBPquWOKhh!~~_27.JPG','http://i.ebayimg.com/00/$(KGrHqYOKjwE6mB1vr+3BPquWlCSiQ~~_27.JPG','http://i.ebayimg.com/00/$(KGrHqFHJCcE-ffTjhSNBPquW)B,nQ~~_27.JPG','http://i.ebayimg.com/00/$(KGrHqZHJDoE-OK!LnP+BPquW8vnSw~~_27.JPG','http://i.ebayimg.com/00/$(KGrHqZHJBgE-QSFYkJyBPqu(HpeiQ~~_27.JPG','http://i.ebayimg.com/00/$(KGrHqFHJ!0E-bKTNDR9BPqu(Ve+fg~~_27.JPG','http://i.ebayimg.com/00/$(KGrHqZHJCYE-dl7-yLiBPqu(qJjs!~~_27.JPG','http://i.ebayimg.com/00/$(KGrHqJHJBIE-eqSiEkjBPqu(3Y1dw~~_27.JPG');
+                    //-->
+                </script>	
+
+                <div class="morePictures">
+
+                    <img src="http://i.ebayimg.com/00/$(KGrHqZHJBIE-eW3+,ZCBPquWOKhh!~~_14.JPG" alt="Bildnr.&nbsp;0" onmouseover="swapImage('pic_02','','http://i.ebayimg.com/00/$(KGrHqZHJBIE-eW3+,ZCBPquWOKhh!~~_27.JPG',1)">
+
+
+                    <img src="http://i.ebayimg.com/00/$(KGrHqYOKjwE6mB1vr+3BPquWlCSiQ~~_14.JPG" alt="Bildnr.&nbsp;1" onmouseover="swapImage('pic_02','','http://i.ebayimg.com/00/$(KGrHqYOKjwE6mB1vr+3BPquWlCSiQ~~_27.JPG',1)">
+
+
+                    <img src="http://i.ebayimg.com/00/$(KGrHqFHJCcE-ffTjhSNBPquW)B,nQ~~_14.JPG" alt="Bildnr.&nbsp;2" onmouseover="swapImage('pic_02','','http://i.ebayimg.com/00/$(KGrHqFHJCcE-ffTjhSNBPquW)B,nQ~~_27.JPG',1)">
+
+
+                    <img src="http://i.ebayimg.com/00/$(KGrHqZHJDoE-OK!LnP+BPquW8vnSw~~_14.JPG" alt="Bildnr.&nbsp;3" onmouseover="swapImage('pic_02','','http://i.ebayimg.com/00/$(KGrHqZHJDoE-OK!LnP+BPquW8vnSw~~_27.JPG',1)">
+
+
+                    <img src="http://i.ebayimg.com/00/$(KGrHqZHJBgE-QSFYkJyBPqu(HpeiQ~~_14.JPG" alt="Bildnr.&nbsp;4" onmouseover="swapImage('pic_02','','http://i.ebayimg.com/00/$(KGrHqZHJBgE-QSFYkJyBPqu(HpeiQ~~_27.JPG',1)">
+
+
+                    <img src="http://i.ebayimg.com/00/$(KGrHqFHJ!0E-bKTNDR9BPqu(Ve+fg~~_14.JPG" alt="Bildnr.&nbsp;5" onmouseover="swapImage('pic_02','','http://i.ebayimg.com/00/$(KGrHqFHJ!0E-bKTNDR9BPqu(Ve+fg~~_27.JPG',1)">
+
+
+                    <img src="http://i.ebayimg.com/00/$(KGrHqZHJCYE-dl7-yLiBPqu(qJjs!~~_14.JPG" alt="Bildnr.&nbsp;6" onmouseover="swapImage('pic_02','','http://i.ebayimg.com/00/$(KGrHqZHJCYE-dl7-yLiBPqu(qJjs!~~_27.JPG',1)">
+
+
+                    <img src="http://i.ebayimg.com/00/$(KGrHqJHJBIE-eqSiEkjBPqu(3Y1dw~~_14.JPG" alt="Bildnr.&nbsp;7" onmouseover="swapImage('pic_02','','http://i.ebayimg.com/00/$(KGrHqJHJBIE-eqSiEkjBPqu(3Y1dw~~_27.JPG',1)">
+
+                </div>
+
+                <div>
+
+                    <!--@QA: XXL-image, inserattyp: standard oder premium -->
+                    <img name="pic_02" src="http://i.ebayimg.com/00/$(KGrHqZHJBIE-eW3+,ZCBPquWOKhh!~~_27.JPG" alt="Bild">
+                </div>
+
+
+            </div>
+
+            <!-- ################### /Pictures #################### -->
+
+
+            <a rel="nofollow" class="backLink" href="/home/homepageAllVehiclesSearch.html?scopeId=AV&amp;sortOption.sortBy=makeModelDescriptionSortField&amp;makeModelVariant1.searchInFreetext=false&amp;makeModelVariant2.searchInFreetext=false&amp;makeModelVariant3.searchInFreetext=false&amp;damageUnrepaired=ALSO_DAMAGE_UNREPAIRED&amp;export=ALSO_EXPORT&amp;grossPrice=true&amp;customerIdsAsString=465355&amp;lang=de&amp;partnerHead=false&amp;showZip=false&amp;showModels=false&amp;hideVehicleType=false&amp;pageNumber=1">Zurück zur Fahrzeugliste</a>
+
+            <img id="mediaplexImg1" src="" width="1" height="1" border="0" alt="" title="">
+            <img id="mediaplexImg2" src="" width="1" height="1" border="0" alt="" title="">
+            <script type="text/javascript">
+                var mediaplex = {};
+                mediaplex.executeRequest = function() {
+                    var mpt = new Date();
+                    $("mediaplexImg1").src = "http:\/\/adfarm.mediaplex.com\/ad\/bk\/4284-21491-3840-1?Parkplatz=1&mpuid=" + mpt.getTime() + "-" + mpt.getTimezoneOffset();
+                    $("mediaplexImg2").src = "http:\/\/altfarm.mediaplex.com\/ad\/bk\/6010-31234-3840-1?Parkplatz-Int=1&mpuid=" + mpt.getTime() + "-" + mpt.getTimezoneOffset();
+                };
+            </script>		
+
+
+        </div></div></body>
+
+<!-- ###TEMPLATE_SINGLE### -->
